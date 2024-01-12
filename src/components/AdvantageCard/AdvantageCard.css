@@ -1,0 +1,79 @@
+.advantageCard{
+width: 35.9375em;
+height: 16.5625em;
+background: #EFF1F5;
+border-radius: 1.25em;
+padding: 2.0625em 3.1875em 1.625em 3.0625em;
+display: flex;
+align-items: center;
+gap: 2.5em;
+transition: 0.5s;
+}
+
+.advantageCard:hover{
+    background-color: #3082FF;
+}
+
+.advantageCard:hover .advantage-card-title{
+color: white;
+}
+
+.advantageCard:hover .advantage-card-text{
+    color: white;
+    }
+
+.advantage-icon{
+    width: 6.875em;
+    height: 6.875em;
+}
+
+.advantage-card-title{
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 1.25em;
+line-height: 175%;
+color: #121212;
+}
+
+.advantage-card-text{
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 300;
+font-size: 0.875em;
+line-height: 165%;
+color: rgba(18, 18, 18, 0.6);
+}
+
+
+@media all and (max-width: 576px){
+    .advantageCard{
+        width: 87.500vw;
+        height: auto;
+        min-height: 100vw;
+        border-radius: 5vw;
+        padding: 10vw 5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        }
+                
+          .advantage-icon{
+            width: 27.500vw;
+            height: 27.500vw;
+        }
+        
+        .advantage-card-title{
+        font-weight: 700;
+        font-size: 5vw;
+        text-align: center;
+        }
+        
+        .advantage-card-text{
+        font-weight: 400;
+        font-size: 3.500vw;
+        /* width: 75vw; */
+        text-align: center;
+        }
+        
+}

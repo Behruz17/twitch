@@ -1,0 +1,12 @@
+.burger-menu{
+    width: 7.500vw;
+    height: 5vw;
+    display: none;
+    }
+    
+
+    @media all and (max-width: 576px){
+        .burger-menu{
+            display: inline;
+          }
+    }

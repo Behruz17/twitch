@@ -1,0 +1,320 @@
+.header-box {
+  width: 100%;
+  height: 5.75em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25em;
+}
+
+header {
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.scrolled-header{
+  background-color: #00080E;
+}
+
+.logo {
+  /* font-family: 'Gilroy'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.625em;
+  line-height: 119%;
+  color: #ffffff;
+}
+
+.logo span {
+  color: #3082ff;
+}
+
+.nav-list-item a {
+  /* font-family: 'Gilroy'; */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.875em;
+  line-height: 121%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.28125em 0;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+
+.nav-list-item a:hover{
+  /* font-weight: 500;
+  color: #ffffff;
+  border-bottom: 1px solid #3082ff; */
+  cursor: pointer;
+}
+
+.active {
+  font-weight: 500;
+  color: #ffffff;
+  border-bottom: 1px solid #3082ff;
+}
+
+.nav-list {
+  display: flex;
+  gap: 3.125em;
+  list-style: none;
+}
+
+.email-text {
+  /* font-family: 'Gilroy'; */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75em;
+  line-height: 116.6%;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  gap: 0.4375em;
+}
+
+.email-address {
+  /* font-family: 'Gilroy'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 121%;
+  text-align: right;
+  color: #ffffff;
+}
+
+.email-dot {
+  width: 3px;
+  height: 3px;
+  background: #3082ff;
+  box-shadow: 0px 0px 6px #3082ff;
+  border-radius: 50%;
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+h1 {
+  /* font-family: 'Gilroy'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 139.5%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.mt40{
+  margin-top: 2.5em;
+}
+
+.top {
+  background: url(../../../public/assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position-y: -60px; */
+  width: 100%;
+ background-color: #00080E;
+  padding-top: 5.75em;
+}
+
+h1 span {
+  color: #3082ff;
+}
+
+.top-text {
+  /* font-family: 'Gilroy'; */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.035em;
+  color: #ffffff;
+  margin-top: 1.875em;
+  margin-bottom: 2.8125em;
+}
+
+.top-btns {
+  display: flex;
+  justify-content: center;
+  gap: 0.625em;
+}
+
+.top-btns button {
+  width: 12.5em;
+  height: 4.0625em;
+  /* font-family: 'Gilroy'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125em;
+  line-height: 122%;
+  text-align: center;
+  transition: 0.3s;
+  position: relative;
+  z-index: 99;
+}
+
+.sign-up-btn {
+  background: #3082ff;
+  border-radius: 21.875em;
+  color: #ffffff;
+}
+
+.sign-up-btn:hover{
+  cursor: pointer;
+  color: #3082ff;
+  background-color: #ffffff;
+}
+
+.log-in-btn {
+  background: #ffffff;
+  border-radius: 21.875em;;
+  color: #3082ff;
+}
+
+.log-in-btn:hover {
+  cursor: pointer;
+  background-color: #3082ff;
+  color: #ffffff;
+}
+
+.img-container{
+  text-align: center;
+}
+
+.macbook {
+  height: 58.625em;
+  position: relative;
+  margin-top: -7.5em;
+}
+
+.about-bg{
+  background-image: url(../../../public/assets/top-wave.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 26.3125em;
+  margin-top: -10em;
+}
+
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-right: 1.25em; */
+}
+
+.macbook-mobile{
+  height: 58.625em;
+  position: relative;
+  margin-top: -7.5em;
+  display: none;
+}
+
+.email-address .email-dot{
+  display: none;
+}
+
+@media all and (max-width: 576px){
+  .nav-list, .email-text{
+    display: none;
+  }
+  .header-box{
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: flex-start;
+    
+  }
+  .header-wrapper {
+    padding: 5vw;
+  }
+  .email-address{
+    font-size: 3vw;
+    line-height: 116.66%;
+  }
+  .logo{
+    font-size: 4.500vw;
+    line-height: 122%;
+  }
+
+  header {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* position: static; */
+  }
+
+  /* .scrolled-header{
+    background-color: transparent;
+  } */
+
+  h1 {
+    font-size: 8vw;
+    line-height: 140.5%;
+    width: 88vw;
+    margin: 0 auto;
+  }
+  .mt{
+    margin-top: 12.500vw;
+  }
+  .top-text {
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 143.75%;
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 3.750vw;
+    margin-bottom: 6.250vw;
+  }
+
+  .top-btns{
+    flex-direction: column;
+    align-items: center;
+    gap: 6.250vw;
+  }
+.top-btns button{
+  width: 47.500vw;
+  height: 13.750vw;
+  font-size: 4.500vw;
+}
+.log-in-btn{
+  background: transparent;
+  border: 1px solid #FFFFFF;
+}
+
+.top {
+  background-image: url(../../../public/assets/mobile-bg.png);
+  padding-top: 21vw;
+}
+.macbook-mobile{
+  display: inline;
+}
+.about-bg{
+  margin-top: 0;
+}
+.macbook{
+  display: none;
+}
+
+.email-address .email-dot{
+  display: block;
+}
+
+.email-address{
+  display: flex;
+  align-items: center;
+  gap: 2.500vw;
+}
+
+}

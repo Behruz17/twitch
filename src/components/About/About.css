@@ -1,0 +1,121 @@
+.about{
+    /* height: 65.125em; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3.75em;
+    background-color: white;
+    margin-top: -15.625em;
+}
+
+.about-title{
+font-style: normal;
+font-weight: 600;
+font-size: 3em;
+line-height: 122%;
+color: #3082FF;
+}
+
+.about-title span{
+    color: #121212;
+}
+
+.phone-img{
+    width: 33.875em;
+    height: 44.6875em;
+}
+
+.about-desc{
+    width: 35em;
+    height: 14.5em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 181.25%;
+    color: #121212;
+    margin-top: 2.5em;
+}
+
+.blue-text{
+    color: #3082FF;
+}
+
+.bold-text{
+    font-weight: 500;
+}
+
+.blue-dot{
+width: 0.5em;
+height: 0.5em;
+background: #3082FF;
+border-radius: 50%;
+margin-top: 0.625em;
+}
+
+.text-with-dot{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25em;
+    margin-top: 2.25em;
+}
+
+.about-desc2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 181.25%;
+    color: #121212;
+    width: 31.6875em;
+    height: 10.875em;
+}
+
+@media all and (max-width: 576px){
+    .about{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+
+    }
+
+    .phone-img{
+        width: 85%;
+        height: auto;
+    }
+
+    .about-content{
+        width: 84.750vw;
+        padding-left: 7.500vw;
+        padding-right: 6vw;
+    }
+    .about-title{
+        font-size: 8vw;
+        width: 60.250vw;
+        display: flex;
+        flex-direction: column;
+        }
+        .about-desc{
+            width: 84.750vw;
+            font-size: 3vw;
+            line-height: 183.33%;
+            margin-top: 5vw;
+            height: 55vw;
+        }
+        .about-desc2{
+            font-size: 3vw;
+            line-height: 175%;
+            width: 82vw;
+            height: 37vw;
+        }
+
+        .text-with-dot{
+            width: 85.500vw;
+            margin-top: 5vw;
+            gap: 2.500vw;
+        }
+
+        .blue-dot{
+            width: 1.250vw;
+            height: 1vw;
+            margin-top: 2vw;
+        }
+
+}

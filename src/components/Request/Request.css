@@ -1,0 +1,148 @@
+.request{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4375em;
+}
+
+.request-img{
+width: 42.125em;
+height: 42.125em;
+margin-left: -3em;
+}
+
+.request-form{
+width: 23.5em;
+height: 29.0625em;
+background: #FFFFFF;
+box-shadow: 0px 4px 4.375em rgba(18, 18, 18, 0.04);
+border-radius: 1.75em;
+padding: 3.5625em 3.5em;
+}
+
+.form-title{
+    /* font-family: 'Gilroy'; */
+font-style: normal;
+font-weight: 400;
+font-size: 1.5em;
+line-height: 120.8%;
+text-align: center;
+color: #121212;
+margin-bottom: 1.25em;
+}
+
+.form-title span{
+    color: #3082FF;
+}
+
+form input{
+width: 20em;
+height: 4.85em;
+background: #F4F4F4;
+border-radius: 11.525em;
+/* font-family: 'Gilroy'; */
+font-style: normal;
+font-weight: 300;
+font-size: 0.825em;
+line-height: 121%;
+color: rgba(18, 18, 18, 0.5);
+padding-left: 3.875em;
+outline: none;
+background-repeat: no-repeat;
+background-size: 0.75em;
+background-position: 2.5em 1.5625em;
+border: 2px solid transparent;
+}
+
+.input-name{
+    background-image: url(../../../public/assets/user-icon.svg);
+}
+
+.input-email{
+    background-image: url(../../../public/assets/email-icon.svg);
+}
+
+.input-comment{
+    background-image: url(../../../public/assets/comment-icon.svg);
+}
+
+form input:hover{
+    border: 2px solid #3082FF;
+}
+
+.send-btn{
+width: 17.2em;
+height: 4.64em;
+background: #3082FF;
+border-radius: 68.75em;
+font-style: normal;
+font-weight: 700;
+font-size: 0.9625em;
+line-height: 123%;
+text-align: center;
+color: #FFFFFF;
+transition: 0.3s;
+border: 2px solid transparent;
+}
+
+.send-btn:hover{
+    background-color: #FFFFFF;
+    color: #3082FF;
+    border: 2px solid #3082FF;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625em;
+}
+
+@media all and (max-width:576px){
+    .request{
+        flex-direction: column;
+        gap: 14.250vw;
+        margin-bottom: 22vw;
+    }
+    
+    .request-img{
+    width: 97.500vw;
+    height: 97.500vw;
+    margin-left: 0;
+    }
+    
+    .request-form{
+    width: 83vw;
+    height: 116.250vw;
+    box-shadow: 0px 4px 17.500vw rgba(18, 18, 18, 0.04);
+    border-radius: 7vw;
+    padding: 14.250vw 8.500vw 14.875vw 8.500vw;
+    }
+    
+    .form-title{
+    font-size: 6vw;
+    margin-bottom: 5vw;
+    }
+    
+    form input{
+    width: 66vw;
+    height: 16.500vw;
+    border-radius: 46.100vw;
+    font-size: 3.300vw;
+    padding-left: 15.500vw;
+    background-size: 3vw;
+    background-position: 10vw 6.250vw;
+     }
+    
+    .send-btn{
+    width: 66vw;
+    height: 17.875vw;
+    border-radius: 275vw;
+    font-size: 3.850vw;
+    }
+
+    .inputs{
+        gap: 2.500vw;
+    }
+    
+}

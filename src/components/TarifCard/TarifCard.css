@@ -1,0 +1,157 @@
+.tarif-card {
+  box-sizing: border-box;
+  width: 17.5em;
+  height: 31.9375em;
+  background: #eff1f5;
+  border-radius: 1.25em;
+  position: relative;
+}
+
+.tarif-card-header {
+  width: 17.5em;
+  height: 7.8125em;
+  background-image: url(../../../public/assets/card-header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.875em 0 1.25em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125em;
+  position: relative;
+}
+
+.tarif-card-title {
+  /* font-family: 'Gilroy'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25em;
+  line-height: 97%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tarif-card-price {
+  /* font-family: 'Gilroy'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 175%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tc-list {
+  margin: 1.875em 1.6875em 1.9375em 1.25em;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625em;
+  z-index: 2;
+}
+
+.tc-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9375em;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 165%;
+  color: rgba(18, 18, 18, 0.7);
+  z-index: 2;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background: #3082ff;
+  border-radius: 50%;
+}
+
+.tc-btn{
+width: 12.5em;
+height: 3.75em;
+background: #3082FF;
+border-radius:21.875em;
+/* font-family: 'Gilroy'; */
+font-style: normal;
+font-weight: 600;
+font-size: 1.125em;
+line-height: 122%;
+color: #FFFFFF;
+transition: 0.3s;
+}
+
+.tc-btn:hover{
+  color: #3082FF;
+  background-color: #FFFFFF;
+  border: 1px solid #3082FF;
+}
+
+.btn-container{
+  text-align: center;
+}
+
+.hit{
+  width: 6.625em;
+  height: 1.70375em;
+  position: absolute;
+  top: -0.90625em;
+  right: 1.875em;
+}
+
+@media all and (max-width: 576px){
+  .tarif-card {
+    width: 70vw;
+    height: 127.750vw;
+    border-radius: 5vw;
+  }
+  
+  .tarif-card-header {
+    width: 70vw;
+    height: 31.250vw;
+    padding: 7.500vw 14vw 5vw 14vw;
+    gap: 1.250vw;
+    align-items: center;
+  }
+  
+  .tarif-card-title {
+    font-size: 9vw;
+  }
+  
+  .tarif-card-price {
+    font-size: 5vw;
+    width: 50vw;;
+  }
+  
+  .tc-list {
+    margin: 7.500vw 11.250vw 11.250vw 5vw;
+    gap: 2.500vw;
+  }
+  
+  .tc-list-item {
+    gap: 3.750vw;
+    font-size: 4.500vw;
+  }
+  
+  .dot {
+    width: 1.750vw;
+    height: 1.750vw;
+  }
+  
+  .tc-btn{
+  width: 50vw;
+  height: 15vw;
+  border-radius: 87.500vw;
+  font-size: 4.500vw;
+  }
+  
+  
+  .hit{
+    width: 26.500vw;
+    height: 6.815vw;
+    top: -3.4075vw;
+    right: 7.500vw;
+  }
+}
